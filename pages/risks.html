@@ -1,0 +1,30 @@
+<!-- risks.html -->
+<div class="text-center">
+    <h1>Veiklų rizikingumas</h1>
+
+    <p>{{ message }}</p>
+
+
+<table class="table row">
+  <!-- create dynamical header  -->
+  <thead ng-controller="GetTableJsonCtrl as table">
+    <tr><th ng-repeat="cell in cells" colspan="{{cell.subheaders.length}}">{{cell.header}}</th></tr>
+    <tr><th ng-repeat="sub in table.subArray">{{sub}}</th></tr>
+  </thead>
+  <!--create dynamical table  -->
+  <tbody ng-controller="GetRiskJsonCtrl as data">
+    <tr ng-repeat="el in elements">
+      <td>{{0 || $index+1}}</td>
+      <td>{{0 || el.name}}</td>
+      <td ng-repeat="riskValue in el.values.risks track by $index">{{0 || riskValue}}</td>
+      <td>{{0 || data.calculate(el.values.risks)}}</td>
+      <td>{{0 || data.average(el.values.risks) | number:1 }}</td>
+      <td>{{0 || data.levels(data.average(el.values.risks))}}</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+<!--http://plnkr.co/edit/Wuc6M7?p=preview-->
+
+<!--http://stackoverflow.com/questions/13020821/how-to-load-json-into-my-angular-js-ng-model-->

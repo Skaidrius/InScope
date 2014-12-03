@@ -1,0 +1,23 @@
+[
+  {
+    "header": "VA objektas", 
+    "subheaders": [
+      "Eil. Nr", 
+      "Audituotina sritis"
+      ]
+  },{
+    "header": "Rizikos veiksniai",
+    "subheaders": [
+      "RK1", 
+      "RK2", 
+      "RK3"
+      ]
+  },{
+    "header": "Rizika",
+    "subheaders": [
+      "Bendras RB skaičius", 
+      "RB vidurkis", 
+      "Bendra rizika"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+[ 
+  {
+    "name": "Veikla", 
+    "values": 
+    {
+      "risks": [1, 2, 1]
+    }
+  }, {
+    "name": "Valdymas", 
+    "values": 
+    {
+      "risks": [ 3, 2, 2]
+    }
+  } 
+]
